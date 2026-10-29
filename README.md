@@ -4,6 +4,19 @@ An interactive, top-down pendulum-ring experiment inspired by [Galileo's Ring II
 
 The simulator is a single HTML file, with its interface, styles, and application code together. It uses Three.js for rendering and runs entirely in your browser; it does not require a build step or an account.
 
+## Gallery
+
+![Animated maximum-settings demonstration](images/maximum-settings.gif)
+
+**Maximum settings:** 120 pendulums, 48 length steps, 12 repeated sections, 5 m longest length, 70% length difference, and 40° release angle. The four-second animation samples the simulation at the equivalent of 25× speed. With 10 pendulums per section, only 10 of the 48 available length steps are represented in each section.
+
+| Three repeated sections | Four repeated sections | Six repeated sections |
+| --- | --- | --- |
+| ![Three-section pattern](images/threefold.png) | ![Four-section pattern](images/fourfold.png) | ![Six-section pattern](images/sixfold.png) |
+| 48 pendulums, 16 steps, 30% difference, 20° release, at 13 s | 60 pendulums, 15 steps, 60% difference, 35° release, at 7 s | 72 pendulums, 12 steps, 45% difference, 30° release, at 11 s |
+
+All three still examples use a longest length of 2.5 m. The patterns change throughout playback.
+
 ## Requirements
 
 - A modern browser with JavaScript and WebGL enabled (for example, a current version of Chrome, Edge, Firefox, or Safari).
@@ -92,6 +105,7 @@ This is a visualization, not a precision physics tool: the small-angle approxima
 ```text
 index.html  Simulator, styles, controls, and Three.js integration
 README.md   Setup, usage, and model notes
+images/     Animated demonstration and example patterns
 ```
 
 ## Reference and dependencies
